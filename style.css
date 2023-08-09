@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 68px;
+    background-color: #0F1111;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.left_nav{
+    width: 217px;
+    height:80px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.4em;
+}
+
+.logo{
+    width: 120px;
+    height: 50px;
+    margin-top: 0.4em;
+}
+
+.logo img{
+    width: 115px;
+    height:60px;
+}
+
+.global_location{
+    width: 82px;
+    height: 50px;
+    display: flex;
+}
+
+.line_block{
+    margin-top:1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#line_1{
+   color: #ccc;
+   font-size: 12px;
+   line-height: 14px;
+   height: 14px;
+   font-weight: 400;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#line_2{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.icon{
+   width: 15px;
+   height: 18px;
+   margin-top: 1.5em;
+   margin-right: 0.4em;
+}
+
+i{
+    color: white;
+}
+
+/* now we start give css to navfilling  */
+
+.nav_fill{
+    width: 860px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6em;
+}
+
+#select{
+    width: 56px;
+    height: 40px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    white-space: nowrap;
+    background-color: #f0eeee;
+    border: 0.5px solid #f0eeee;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.nav_fill input{
+    width: 546px;
+    height: 40px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: 0.5px solid #f0eeee;
+}
+
+.nav_fill button{
+    width: 45px;
+    height: 40px;
+    background-color: #FF9900;
+    border: 0.5px solid #FF9900;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav_fill button i{
+    font-size: 20px;
+    color: #3b3b3b;
+}
+
+.nav_right{
+    width: 458px;
+    height: 60px;
+    display: flex;
+}
+
+.nav_acc{
+    width: 130px;
+    height: 50px;
+    margin-top: 0.8em;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.order{
+    width: 60px;
+    height: 50px;
+    margin-left: 0.6em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8em;
+}
+
+.cart{
+    width: 150px;
+    height: 50px;
+    margin-top: 0.7em;
+}
+
+.cart i{
+    width:38px;
+    height: 26px;
+    font-size:32px;
+    margin-left: 1.6em;
+    
+}
+
+.navbar_con{
+    width: 100%;
+    height: 39px;
+    background-color: #333c4c;
+    color: white;
+}
+
+.con_left{
+    width: 60%;
+    float: left;
+    text-align: start;
+    padding-left:1.4em;
+    padding-top: 0.5em;
+    
+}
+
+.con_left a{
+    color: white;
+    text-decoration: none;
+    margin-left: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.con_right{
+    width: 40%;
+    float: right;
+    text-align: end;
+    padding-right:1.8em;
+    padding-top: 0.5em;
+}
+
+.con_right a{
+    color: white;
+    text-decoration: none;
+    margin-right: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.hero_container{
+    width: 100%;
+    height: 300px;
+    background-image:url(./img_folder/hero_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.small_con{
+    width: 100%;
+    margin: 0px 20px 0px 20px;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    
+}
+
+.small_con a{
+    color: #007185;
+    text-decoration: none;
+}
+
+.small_con a:hover{
+    color: #FF9900;
+    text-decoration: underline;
+}
+
+.card_container{
+    width:100%;
+    height: 1500px;
+    background-color: #f2f2f2;
+}
+
+.card{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 1.5em;
+}
+
+.col_1{
+    width:25%;
+    height: 450px;
+    background-color:white;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+.col_1 h3{
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    font-weight: 700;
+    padding-top:0.2em;
+    padding-bottom: 0.4em;
+    
+}
+
+.card_img{
+    width:287px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.one img{
+    width:140px;
+    height: 120px;
+}
+
+.one p{
+    font-size: 12px ;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one_1{
+    margin-top: 2em;
+}
+
+.see_more{
+    width: 140px;
+    height: 20px;
+    margin-top: 2em;
+}
+
+.see_more a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #146eb4;
+}
+
+.see_more a:hover{
+    cursor: pointer;
+    color: #FF9900;
+    text-decoration: underline;
+}
+
+.img_left{
+    position: relative;
+    left: -20px;
+    margin-left: 5px;
+}
+
+.single_img{
+    width: 250px;
+}
+
+.single_img img{
+    width: 250px;
+    height: 310px;
+}
+
+.c4{
+    background-color:#f2f2f2;
+    padding: 0;
+}
+
+.btn_con{
+    margin: 0;
+    width: 280px;
+    height: 150px;
+    padding: 1em;
+    background-color: #fff;
+}
+
+.btn_con button{
+    width: 250px;
+    height: 34px;
+    background-color: #fac423;
+    border:2px solid #fac423;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.img_amazon img{
+    width: 280px;
+    height: 270px;
+    margin-top:1.9em;
+    
+}
+
+.second_single_img img{
+     width: 230px;
+     height: 250px;
+}
+
+.offer button{
+    width: 100px;
+    background-color: #CC0C39;
+    border: 2px solid #CC0C39;
+    padding: 4px;
+    color: white;
+}
+
+.offer h5{
+    display: inline-block;
+    color: #CC0C39;
+    margin-left: 2px;
+}
+
+.offer p{
+    font-size: 12px !important;
+    line-height: 18px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5em;
+}
+
+.sign_in{
+    width: 100%;
+    height: 150px;
+}
+
+.inner_sign_con{
+    width: 100%;
+    border: 1.5px solid #d1d0d0;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 25px;
+    word-spacing: 0.1px;
+}
+
+.inner_sign_con button{
+    width: 230px;
+    padding: 5px;
+    background-color:#fdc10e;;
+    border: 3px solid #fdc10e;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 1px 0 #ffe093;
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.back_top{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #333c4c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.real_footer{
+    width: 100%;
+    height: 400px;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+.one_col h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.one_col p{
+    margin-bottom: 10px;
+}
+.one_col a{
+    text-decoration: none;
+    color: #DDD;
+    font-family: inherit;
+    word-wrap: break-word;
+    line-height: 120%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.one_col a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+   .navbar{
+    width: 100%;
+    height: 50px;
+   }
+
+   .left_nav{
+     width: 20%;
+     height: 50px;
+   }
+
+   .logo{
+    width: 50%;
+    height: 40px;
+   }
+
+   .logo img{
+    width: 100%;
+    height: 40px;
+    margin-top: 3px;
+   }
+
+   .global_location{
+    width: 50%;
+    height: 40px;
+   }
+
+   .global_location .icon > a > i{
+    font-size: 12px;
+   }
+
+   .icon{
+    margin-top: 14px;
+   }
+
+   #line_1{
+    font-size: 8px;
+   }
+
+   #line_2{
+    font-size: 8px;
+   }
+
+
+
+   .nav_fill{
+    width: 40%;
+    height: 50px;
+    margin-left: 1em;
+   }
+
+  .nav_fill input[type="text"]{
+     width: 100px; 
+     height: 30px;
+     font-size: 10px;
+   }
+
+  .nav_fill #select{
+    width: 30px;
+    height: 30px;
+   }
+
+
+  .nav_fill button{
+    width: 20px;
+    height: 30px;
+   }
+
+  .nav_fill button i{
+    font-size: 10px;
+   }
+
+   .nav_right{
+    width: 40%;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: -5px;
+   }
+
+   .nav_acc{
+     width: 33%;
+     height: 40px;
+   }
+
+   .nav_acc .acc{
+    font-size: 10px;
+   }
+
+   .order{
+    width: 33%;
+    height: 40px;
+   }
+
+   #order{
+    font-size: 10px;
+   }
+
+   .cart{
+     display: inline-block;
+    width:33%;
+    height: 40px;
+    margin-top: -10px;
+    font-size: 10px;
+    margin-left: 10px;
+   }
+
+  
+    .navbar_con{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .con_left{
+        width: 50%;
+        height: 40px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        margin-left: 7px;
+        margin-right: 18px;
+    }
+
+    .con_left #icon{
+        font-size:9px;
+    }
+
+    #icon{
+        width: 10%;
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+
+    .con_left a{
+        font-size: 9px;
+        margin-left: 10px;
+    }
+     
+    .con_right{
+        margin-top: -10px;
+        margin-left: 34px;
+    }
+
+    .con_right a{
+        font-size: 9px;
+    }
+  
+    .hero_container{
+        width: 100%;
+        height: 150px;
+    }
+
+    .small_con p{
+       font-size: 9px;
+       padding: 5px;
+    }
+
+    .card_container{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .card{
+        width: 100%;
+        height: 250px;
+    }
+    .col_1{
+        width: 25%;
+        height: 140px;
+        padding-top: 5px;
+    }
+
+    .col_1 h3{
+        font-size: 7px;
+        line-height: 6px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+
+    .col_1 .single_img > img{
+        width: 50px;
+        height: 60px;
+        margin-top: 5px;
+    }
+
+     
+    .see_more{
+        margin: 0;
+        padding: 0;
+    }
+    .see_more a{
+        font-size: 8px;
+    }
+
+    .card_img{
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .one{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction:row;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+   .img_one{
+    width: 100%;
+   }
+
+    .img_one img{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #img_1{
+        margin-left: -20px;
+    }
+
+    #para-left{
+        margin-left: -54px;
+    }
+
+    .img_one p{
+       font-size: 8px;
+    }
+
+    
+}
